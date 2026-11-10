@@ -37,8 +37,6 @@ Musical interpretation stays separate from drawing: the renderer receives explic
 
 The implementation passes TypeScript checking and fourteen local tests. A separate connection test starts the server and calls every tool. Local process and HTTP connections are implemented, and the widget builds successfully.
 
-The image above is renderer output. Live ChatGPT/Claude demonstrations and a public HTTPS deployment have not been verified. Score playback and interactive notation editing are not implemented.
-
 ## Further reading
 
 [Tool names, rendering, validation and testing](docs/implementation.md)
