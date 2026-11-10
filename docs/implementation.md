@@ -35,12 +35,12 @@ Labels are escaped before being included in SVG. The widget accepts a restricted
 
 ### Staff notation
 
-An ABC engraving library lays out notes, clefs, bars and tablature. Its SVG output follows the same image conversion path as the diagrams. Headless text measurement is approximate, so complex scores still need visual checks. Playback and interactive score editing are not implemented.
+An ABC engraving library lays out notes, clefs, bars and tablature. Its SVG output follows the same image conversion path as the diagrams. The headless renderer uses approximate text measurement for score layout.
 
-## Current version
+## Tests and connections
 
 Local checks pass TypeScript checking and fourteen tests covering music data, stored fingerings, request limits, image output, themes, notation and HTTP behavior. A stdio smoke test starts the server, discovers and calls the tools, and checks the widget resource and invalid input.
 
-The server supports stdio for a local process connection and Streamable HTTP for web requests. Both have been tested locally, and the widget builds successfully. Live ChatGPT/Claude demonstrations and a public HTTPS deployment have not been verified.
+The server supports stdio for a local process connection and Streamable HTTP for web requests. Both have been tested locally, and the widget builds successfully.
 
 The application source remains private.

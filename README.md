@@ -2,7 +2,7 @@
 
 A TypeScript server that generates chord diagrams and written music for assistant conversations. The idea is to make a musical explanation something you can also see and play.
 
-**Built with:** TypeScript and Model Context Protocol (MCP) · **Current form:** locally tested server and widget
+**Built with:** TypeScript and Model Context Protocol (MCP)
 
 ## See the notes in a chord
 
@@ -33,9 +33,9 @@ The same request can include available guitar or ukulele fingerings. A chord seq
 
 Musical interpretation stays separate from drawing: the renderer receives explicit notes and finger positions rather than making them up from a label.
 
-## Where it stands
+## Tests and connections
 
-The implementation passes TypeScript checking and fourteen local tests. A separate connection test starts the server and calls every tool. Local process and HTTP connections are implemented, and the widget builds successfully.
+The implementation passes TypeScript checking and fourteen local tests. A separate connection test starts the server and calls every tool. The server supports local process and HTTP connections.
 
 ## Further reading
 
