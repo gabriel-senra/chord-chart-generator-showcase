@@ -1,0 +1,11 @@
+{
+  "name": "@music-ai/preview",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@music-ai/render": "*",
+    "@music-ai/theory": "*",
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}
