@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "music-ai": {
+      "command": "node",
+      "args": ["packages/server/src/stdio.ts"]
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "music-ai",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Renders chord charts, fretboard/keyboard diagrams and engraved notation inside ChatGPT and Claude via MCP Apps",
+  "workspaces": [
+    "packages/*",
+    "tools/*"
+  ],
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "build": "npm run build --workspace packages/widgets",
+    "preview": "node tools/preview/src/index.ts",
+    "smoke": "npm run build && node tools/smoke/src/index.ts",
+    "serve:stdio": "node packages/server/src/stdio.ts",
+    "serve:http": "node packages/server/src/http.ts",
+    "tunnel": "ngrok http 8787 --url=${MUSIC_AI_NGROK_DOMAIN:-generic-essential-pauper.ngrok-free.dev}",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.7.0"
+  }
+}

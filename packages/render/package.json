@@ -1,0 +1,12 @@
+{
+  "name": "@music-ai/render",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@music-ai/theory": "*"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@music-ai/widgets",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.ts"
+  },
+  "dependencies": {
+    "@music-ai/render": "*",
+    "@music-ai/theory": "*"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
